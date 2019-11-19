@@ -1,0 +1,45 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/SelectLibraryConfigurations.cmake
+C:/solutions/doods_client/CMakeLists.txt
+C:/solutions/doods_client/build64/CMakeFiles/3.13.4/CMakeCCompiler.cmake
+C:/solutions/doods_client/build64/CMakeFiles/3.13.4/CMakeCXXCompiler.cmake
+C:/solutions/doods_client/build64/CMakeFiles/3.13.4/CMakeRCCompiler.cmake
+C:/solutions/doods_client/build64/CMakeFiles/3.13.4/CMakeSystem.cmake
+C:/vcpkg/installed/x64-windows/share/c-ares/c-ares-config.cmake
+C:/vcpkg/installed/x64-windows/share/c-ares/c-ares-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/c-ares/c-ares-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/c-ares/c-ares-targets.cmake
+C:/vcpkg/installed/x64-windows/share/grpc/gRPCConfig.cmake
+C:/vcpkg/installed/x64-windows/share/grpc/gRPCConfigVersion.cmake
+C:/vcpkg/installed/x64-windows/share/grpc/gRPCTargets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/grpc/gRPCTargets-release.cmake
+C:/vcpkg/installed/x64-windows/share/grpc/gRPCTargets.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-module.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-options.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets.cmake
+C:/vcpkg/scripts/buildsystems/vcpkg.cmake

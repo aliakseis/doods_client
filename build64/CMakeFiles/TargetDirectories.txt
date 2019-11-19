@@ -1,0 +1,3 @@
+C:/solutions/doods_client/build64/CMakeFiles/doods_client.dir
+C:/solutions/doods_client/build64/CMakeFiles/ALL_BUILD.dir
+C:/solutions/doods_client/build64/CMakeFiles/ZERO_CHECK.dir
