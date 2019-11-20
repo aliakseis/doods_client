@@ -3,11 +3,15 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <algorithm>
 
 
 #include <grpcpp/grpcpp.h>
 
 #include "rpc.grpc.pb.h"
+
+#include <boost/gil/extension/io/jpeg.hpp>
+
 
 class DoodsClient {
 public:
@@ -63,9 +67,11 @@ private:
     std::unique_ptr<odrpc::odrpc::Stub> stub_;
 };
 
+namespace gil = boost::gil;
+
 int main(int argc, char** argv) {
 
-    if (argc != 2)
+    if (argc < 2)
     {
         std::cerr << "Please provide file name.\n";
         return 1;
@@ -95,6 +101,45 @@ int main(int argc, char** argv) {
                 << " right: " << detection.right()
                 << " bottom: " << detection.bottom()
                 << " label: " << detection.label() << '\n';
+        }
+
+        if (argc > 2)
+        {
+            gil::rgb8_image_t img;
+            gil::read_image(argv[1], img, gil::jpeg_tag());
+
+            auto img_view = view(img);
+
+            const auto width = img_view.width();
+            const auto height = img_view.height();
+
+            const float x_max = width - 1;
+            const float y_max = height - 1;
+
+            const gil::rgb8_pixel_t px{ 0, 255, 0 };
+
+            for (auto& detection : detections)
+            {
+                const int left = std::min(detection.left() * width, x_max);
+                const int right = std::min(detection.right() * width, x_max);
+
+                const int top = std::min(detection.top() * height, y_max);
+                const int bottom = std::min(detection.bottom() * height, y_max);
+
+                for (int i = left; i <= right; ++i)
+                {
+                    *img_view.at(i, top) = px;
+                    *img_view.at(i, bottom) = px;
+                }
+
+                for (int i = top; i <= bottom; ++i)
+                {
+                    *img_view.at(left, i) = px;
+                    *img_view.at(right, i) = px;
+                }
+            }
+
+            write_view(argv[2], img_view, gil::jpeg_tag());
         }
 
         return 0;
