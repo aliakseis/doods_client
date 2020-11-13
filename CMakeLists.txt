@@ -9,6 +9,8 @@ else()
   add_definitions(-D_WIN32_WINNT=0x600)
 endif()
 
+FIND_PACKAGE(JPEG REQUIRED)
+
 if(GRPC_AS_SUBMODULE)
   # One way to build a projects that uses gRPC is to just include the
   # entire gRPC project tree via "add_subdirectory".
@@ -86,4 +88,5 @@ include_directories("." "${CMAKE_CURRENT_BINARY_DIR}")
     ${hw_grpc_srcs})
   target_link_libraries(doods_client
     ${_GRPC_GRPCPP_UNSECURE}
-    ${_PROTOBUF_LIBPROTOBUF})
+    ${_PROTOBUF_LIBPROTOBUF}
+    ${JPEG_LIBRARIES})
